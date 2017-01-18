@@ -4238,10 +4238,10 @@ enum GCDAsyncSocketConfig
 		strongSelf->socketFDBytesAvailable = dispatch_source_get_data(strongSelf->readSource);
 		LogVerbose(@"socketFDBytesAvailable: %lu", strongSelf->socketFDBytesAvailable);
 		
-		if (strongSelf->socketFDBytesAvailable > 0)
-			[strongSelf doReadData];
-		else
-			[strongSelf doReadEOF];
+//		if (strongSelf->socketFDBytesAvailable > 0)
+//			[strongSelf doReadData];
+//		else
+//			[strongSelf doReadEOF];
 		
 	#pragma clang diagnostic pop
 	}});
@@ -4359,13 +4359,13 @@ enum GCDAsyncSocketConfig
 
 - (void)suspendReadSource
 {
-	if (!(flags & kReadSourceSuspended))
-	{
-		LogVerbose(@"dispatch_suspend(readSource)");
-		
-		dispatch_suspend(readSource);
-		flags |= kReadSourceSuspended;
-	}
+//	if (!(flags & kReadSourceSuspended))
+//	{
+//		LogVerbose(@"dispatch_suspend(readSource)");
+//		
+//		dispatch_suspend(readSource);
+//		flags |= kReadSourceSuspended;
+//	}
 }
 
 - (void)resumeReadSource
