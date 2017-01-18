@@ -141,7 +141,7 @@ typedef NS_ENUM(NSInteger, GCDAsyncSocketError) {
 **/
 @property (atomic, strong, readwrite, nullable) id userData;
 @property (atomic, assign, readwrite)   NSInteger writeCount;
-
+@property (atomic, assign, readwrite)   NSInteger writeByetes;
 #pragma mark Accepting
 
 /**

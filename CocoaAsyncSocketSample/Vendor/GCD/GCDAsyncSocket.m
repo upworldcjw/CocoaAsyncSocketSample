@@ -6243,7 +6243,10 @@ enum GCDAsyncSocketConfig
 		}
 		
 		ssize_t result = write(socketFD, buffer, (size_t)bytesToWrite);
-		LogVerbose(@"wrote to socket = %zd count=%zd", result,self.writeCount);
+        if (result > 0) {
+            self.writeByetes += result;
+        }
+        LogVerbose(@"wrote to socket = %zd count=%zd bytes=%zd", result,self.writeCount,self.writeByetes);
 		
 		// Check results
 		if (result < 0)
