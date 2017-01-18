@@ -6278,12 +6278,12 @@ enum GCDAsyncSocketConfig
 	
 	if (waiting)
 	{
-		flags &= ~kSocketCanAcceptBytes;
-		
-		if (![self usingCFStreamForTLS])
-		{
-			[self resumeWriteSource];
-		}
+//		flags &= ~kSocketCanAcceptBytes;
+//		
+//		if (![self usingCFStreamForTLS])
+//		{
+//			[self resumeWriteSource];
+//		}
 	}
 	
 	// Check our results
