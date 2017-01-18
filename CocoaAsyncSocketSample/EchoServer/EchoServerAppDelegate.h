@@ -13,7 +13,7 @@
 	BOOL isRunning;
 	
 	IBOutlet id logView;
-	IBOutlet id portField;
+	IBOutlet NSTextField *portField;
 	IBOutlet id startStopButton;
 	
 	NSWindow *window;

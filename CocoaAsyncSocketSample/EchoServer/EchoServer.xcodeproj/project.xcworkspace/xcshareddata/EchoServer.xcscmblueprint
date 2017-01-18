@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5BF2C7F9819F5771C92D33954BBD851FF62E97D0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5BF2C7F9819F5771C92D33954BBD851FF62E97D0" : 9223372036854775807,
+    "53B53F8A35D94D41C00191B254AF730A9FCCB3D0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3DCCFCAA-A5F1-4B0B-BE25-AB5DAF994DF4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5BF2C7F9819F5771C92D33954BBD851FF62E97D0" : "CocoaAsyncSocketSample\/",
+    "53B53F8A35D94D41C00191B254AF730A9FCCB3D0" : "test\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EchoServer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CocoaAsyncSocketSample\/EchoServer\/EchoServer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/upworldcjw\/test.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "53B53F8A35D94D41C00191B254AF730A9FCCB3D0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/upworldcjw\/CocoaAsyncSocketSample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5BF2C7F9819F5771C92D33954BBD851FF62E97D0"
+    }
+  ]
+}

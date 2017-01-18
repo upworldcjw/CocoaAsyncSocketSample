@@ -50,6 +50,7 @@
 		7BDAAFE51E2D24F400AAE143 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = ../Vendor/CocoaLumberjack/DDTTYLogger.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* IPhoneConnectTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IPhoneConnectTest-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DC8466991293ABCB001C71DF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E52CA3421E2F50200098C051 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../../Config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E52CA3421E2F50200098C051 /* Config.h */,
 				7BDAAFDB1E2D24E700AAE143 /* GCDAsyncSocket.h */,
 				7BDAAFDC1E2D24E700AAE143 /* GCDAsyncSocket.m */,
 				1D3623240D0F684500981E51 /* IPhoneConnectTestAppDelegate.h */,
@@ -230,11 +232,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = RN42P92PY7;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = IPhoneConnectTest_Prefix.pch;
 				INFOPLIST_FILE = "IPhoneConnectTest-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.up.1;
 				PRODUCT_NAME = IPhoneConnectTest;
 			};
 			name = Debug;
@@ -244,9 +248,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = RN42P92PY7;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = IPhoneConnectTest_Prefix.pch;
 				INFOPLIST_FILE = "IPhoneConnectTest-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.up.1;
 				PRODUCT_NAME = IPhoneConnectTest;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -260,6 +267,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.2;
 			};
@@ -273,6 +281,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.2;
