@@ -191,18 +191,21 @@
 
 
 - (IBAction)send:(id)sender{
-    GCDAsyncSocket *firstSocket = [connectedSockets lastObject];
-    int i = 0;
-    while (i++ < 10000) {
-//       	NSString *welcomeMsg = @"Are you still there?Are you still there?Are you still there?Are you still there?Are you still there?Are you still there?\r\n";
-//        welcomeMsg = [NSString stringWithFormat:@"%@_%d",welcomeMsg,i];
-//        NSData *welcomeData = [welcomeMsg dataUsingEncoding:NSUTF8StringEncoding];
-//        [firstSocket writeData:welcomeData withTimeout:-1 tag:WELCOME_MSG];
-        
-        NSString *welcomeMsg = @"Are there?";
-//        welcomeMsg = [NSString stringWithFormat:@"%@_%d",welcomeMsg,i];
+    GCDAsyncSocket *lastSocket = [connectedSockets lastObject];
+    int sendByte = 1024;
+    char test[sendByte+1];
+    char *p = test;
+    for (NSInteger i = 0; i < sendByte; i++) {
+        *p = 'a';
+        p++;
+    }
+    *p = '\0';
+    
+    NSInteger count = 0;
+    while (count++ < 1024*1024/sendByte) {//一次发送1K，发送1024次，即1M
+        NSString *welcomeMsg = [NSString stringWithCString:test encoding:NSUTF8StringEncoding];
         NSData *welcomeData = [welcomeMsg dataUsingEncoding:NSUTF8StringEncoding];
-        [firstSocket writeData:welcomeData withTimeout:-1 tag:WELCOME_MSG];
+        [lastSocket writeData:welcomeData withTimeout:-1 tag:WELCOME_MSG];
     }
 }
 

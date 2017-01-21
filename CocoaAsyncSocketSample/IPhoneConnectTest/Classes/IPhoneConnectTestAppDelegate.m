@@ -88,7 +88,7 @@ static const int ddLogLevel = LOG_LEVEL_OFF;
 }
 
 - (void)readLength{
-    [asyncSocket readDataToLength:1000 withTimeout:-1 tag:100];
+    [asyncSocket readDataToLength:1024 withTimeout:-1 tag:100];
 }
 
 - (void)readData{
